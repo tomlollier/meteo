@@ -2,6 +2,7 @@
 <html>
 
   <head>
+    <div id="browser">
       <?php
       $browser = get_browser(null, true);
       
@@ -17,12 +18,18 @@
       {
         echo "<link rel="stylesheet" media="screen" type="text/css" title="Design" href="indexFirefoxcss" />";
       }
-    ?>
+      ?>
+    </div>
     <meta charset="utf-8" />
     <title>Weather App</title>
         
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/weathericons.css" />   
+    <style>
+      #browser {
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
