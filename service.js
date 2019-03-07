@@ -10,7 +10,7 @@ getCities = () => fetch('citiesfr.json', { headers: { "Content-Type": "applicati
 getDegree = (temp) => temp - 273.15;
 
 getWeather = (city) => {
-  fetch('http://api.openweathermap.org/data/2.5/weather?id=' + city.id + '&APPID=78300a224b67b61e3ed80533aa056594')
+  fetch('https://api.openweathermap.org/data/2.5/weather?id=' + city.id + '&APPID=78300a224b67b61e3ed80533aa056594')
     .then(res => res.json())
     .then(res => {
       document.getElementById("temperature").innerHTML = Math.round(getDegree(res.main.temp)) + "°";
@@ -21,7 +21,7 @@ getWeather = (city) => {
 }
 
 getForecast = (city, isInit) => {
-  fetch('http://api.openweathermap.org/data/2.5/forecast?id=' + city.id + '&APPID=78300a224b67b61e3ed80533aa056594')
+  fetch('https://api.openweathermap.org/data/2.5/forecast?id=' + city.id + '&APPID=78300a224b67b61e3ed80533aa056594')
     .then(res => res.json())
     .then(res => {
       console.log(res);
