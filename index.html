@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <div id="browser">
-      <?php
-      $browser = get_browser(null, true);
-      
-      if($browser =="firefox")
-      {
-        echo "<link rel="stylesheet" media="screen" type="text/css" title="Design" href="indexFirefox.css" />";
-      }
-      else if($browser =="chrome")
-      {
-        echo "<link rel="stylesheet" media="screen" type="text/css" title="Design" href="indexChrome.css" />";
-      }
-      else
-      {
-        echo "<link rel="stylesheet" media="screen" type="text/css" title="Design" href="indexFirefoxcss" />";
-      }
-      ?>
-    </div>
     <meta charset="utf-8" />
     <title>Weather App</title>
         
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/weathericons.css" />   
-    <style>
-      #browser {
-        display: none;
+    <script>
+      var nAgt = navigator.userAgent;
+      var browserName = navigator.appName;
+      var verOffset;
+
+      if ((verOffset = nAgt.indexOf ("OPR /"))!! - - 1) {
+        
       }
-    </style>
+
+      else if ((verOffset = nAgt.indexOf ("Opera"))!! = - 1) {
+        
+      }
+      
+      else if ((verOffset = nAgt.indexOf ("MSIE"))!! - - 1) {
+        
+      }
+      else if ((verOffset = nAgt.indexOf ("Chrome"))! = - 1) {
+        
+        <?php
+          echo "<link rel="stylesheet" type="text/css" href="indexChrome.css" />";
+        ?>
+      }
+      else if ((verOffset = nAgt.indexOf ("Safari"))!! - - 1) {
+
+      }
+      
+      else if ((verOffset = nAgt.indexOf ("Firefox"))!! = - 1) {
+        <?php
+          echo "<link rel="stylesheet" type="text/css" href="indexFirefox.css" />";
+        ?>
+      }
+
+    </script>
   </head>
 
   <body>
