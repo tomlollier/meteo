@@ -5,7 +5,7 @@
     <title>Weather App</title>
         
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/weathericons.css" />  
+    <link rel="stylesheet" href="css/weathericons.css" /> 
 
     <?php
       var browser = '';
