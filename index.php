@@ -75,3 +75,7 @@
   <script src="index.js"></script>
 </html>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> cf2b0ac5d5749bee89f290b443b24819afb72603
