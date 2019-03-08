@@ -6,6 +6,7 @@
         
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/weathericons.css" />  
+
     <?php
       var browser = '';
       var browserVersion = 0;
@@ -74,29 +75,3 @@
   <script src="index.js"></script>
 </html>
 
-<?php
-      var browser = '';
-      var browserVersion = 0;
-
-      if (/Opera[\/\s](\d+\.\d+)/.test(navigator.userAgent)) {
-          browser = 'Opera';
-      } else if (/MSIE (\d+\.\d+);/.test(navigator.userAgent)) {
-          browser = 'MSIE';
-      } else if (/Navigator[\/\s](\d+\.\d+)/.test(navigator.userAgent)) {
-          browser = 'Netscape';
-      } else if (/Chrome[\/\s](\d+\.\d+)/.test(navigator.userAgent)) {
-          browser = 'Chrome';
-      } else if (/Safari[\/\s](\d+\.\d+)/.test(navigator.userAgent)) {
-          browser = 'Safari';
-          /Version[\/\s](\d+\.\d+)/.test(navigator.userAgent);
-          browserVersion = new Number(RegExp.$1);
-      } else if (/Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent)) {
-          browser = 'Firefox';
-      }
-      if (browser == 'Chrome') {
-        echo '<link rel='stylesheet' type='text/css' href='indexChrome.css'>';
-      }
-      else if (browser == 'Firefox') {
-        echo '<link rel='stylesheet' type='text/css' href='indexFirefox.css'>';
-      }
-    ?>
